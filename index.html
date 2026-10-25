@@ -4,16 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página web</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 24px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Separación uniforme entre botones */
+            width: 100%;
+            max-width: 320px; /* Ancho máximo en móviles y PC */
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0f172a; /* Azul oscuro moderno/slate */
+            border-radius: 12px; /* Bordes redondeados modernos */
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Efecto al pasar el ratón por encima (Hover) */
+        .btn:hover {
+            background-color: #1e293b;
+            transform: translateY(-2px); /* Pequeño salto hacia arriba */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efecto al hacer clic */
+        .btn:active {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola, mundo desde GitHub Pages Paco!</h1>
-    
+
+    <h1>¡Hola, mundo desde GitHub Pages!</h1>
     <p>Visita mis enlaces favoritos:</p>
-    <ul>
-        <li><a href="https://google.com" target="_blank">Google</a></li>
-        <li><a href="https://github.com" target="_blank">GitHub</a></li>
-        <li><a href="https://wikipedia.org" target="_blank">Wikipedia</a></li>
-        <li><a href="https://youtube.com" target="_blank">YouTube</a></li>
-    </ul>
+    
+    <div class="button-container">
+        <a href="https://google.com" target="_blank" class="btn">Google</a>
+        <a href="https://github.com" target="_blank" class="btn">GitHub</a>
+        <a href="https://wikipedia.org" target="_blank" class="btn">Wikipedia</a>
+        <a href="https://youtube.com" target="_blank" class="btn">YouTube</a>
+    </div>
+
 </body>
 </html>
+
